@@ -1,0 +1,72 @@
+﻿<Window x:Class="TourGuideApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TourGuideApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Label Background="#FFE3B9F0" Content="I TRAVEL" FontSize="30" FontWeight="Bold" Foreground="White"/>
+        <Label Grid.Row="1"  FontSize="20" Foreground="White" Background="#FFE3B9F0" BorderBrush="White" Content=" We'll show you 5 interesting countries of each condinent"/>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label VerticalAlignment="Bottom" >
+                <Image Source="/EuropeMap.png"  />
+            </Label>
+            <Label Grid.Column="1" VerticalAlignment="Bottom" >
+                <Image Source="/AsiaMap.png"  />
+            </Label>
+            <Label Grid.Column="2" VerticalAlignment="Bottom">
+                <Image Source="/AfricaMap.png" />
+            </Label>
+            <Label Grid.Column="3" VerticalAlignment="Bottom">
+                <Image Source="/AustraliaMap.png"  />
+            </Label>
+            <Label Grid.Column="4" VerticalAlignment="Bottom">
+                <Image Source="/AmericaMap.png"  />
+            </Label>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Europe" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <Label Grid.Column="1" Content="Asia" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <Label Grid.Column="2" Content="Africa" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <Label Grid.Column="3" Content="Australia" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <Label Grid.Column="4" Content="America" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Explore" Margin="10" HorizontalAlignment="Center"/>
+            <Button Grid.Column="1" Content="Explore" Margin="10" HorizontalAlignment="Center"/>
+            <Button Grid.Column="2" Content="Explore" Margin="10" HorizontalAlignment="Center"/>
+            <Button Grid.Column="3" Content="Explore" Margin="10" HorizontalAlignment="Center"/>
+            <Button Grid.Column="4" Content="Explore" Margin="10" HorizontalAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>

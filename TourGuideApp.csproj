@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AfricaMap.png" />
+    <None Remove="AmericaMap.png" />
+    <None Remove="Asean.png" />
+    <None Remove="AsiaMap.png" />
+    <None Remove="AustraliaMap.png" />
+    <None Remove="Europe.jpg" />
+    <None Remove="EuropeMap.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="AfricaMap.png" />
+    <Resource Include="AmericaMap.png" />
+    <Resource Include="Asean.png" />
+    <Resource Include="AsiaMap.png" />
+    <Resource Include="AustraliaMap.png" />
+    <Resource Include="Europe.jpg" />
+    <Resource Include="EuropeMap.png" />
+  </ItemGroup>
+
+</Project>
