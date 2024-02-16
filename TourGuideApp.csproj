@@ -15,6 +15,11 @@
     <None Remove="AustraliaMap.png" />
     <None Remove="Europe.jpg" />
     <None Remove="EuropeMap.png" />
+    <None Remove="Window1xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Window1xaml" />
   </ItemGroup>
 
   <ItemGroup>
