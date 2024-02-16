@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="America" Height="450" Width="800">
     <Grid>
-        <Label>America</Label>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
     </Grid>
 </Window>
